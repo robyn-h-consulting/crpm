@@ -1,0 +1,32 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/hoa-management"
+  to = "/hoa-management.html"
+  status = 200
+[[redirects]]
+  from = "/hoa-management-thank-you"
+  to = "/hoa-management-thank-you.html"
+  status = 200
+[[redirects]]
+  from = "/property-management"
+  to = "/property-management.html"
+  status = 200
+[[redirects]]
+  from = "/property-management-thank-you"
+  to = "/property-management-thank-you.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

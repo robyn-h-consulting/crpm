@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank You | CRPM</title>
+<meta name="description" content="Thank you for contacting CRPM.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Platypi:wght@400;500&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111E1D;--ink2:#374151;--maroon:#5E202E;--orange:#E5683D;--orange-dk:#BF4A1B;--green:#1D6953;--cream:#F7F5F0;--sand:#DAD7B4;--line:#E5E7EB;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Nunito Sans",system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Platypi,Georgia,serif;font-weight:400;line-height:1.15}
+h1{font-size:2.25rem}h2{font-size:1.9rem;margin-bottom:.75rem}h3{font-size:1.25rem;margin-bottom:.35rem}
+p{margin-bottom:1rem}
+.wrap{width:min(1100px,100% - 2rem);margin-inline:auto}
+.btn{display:inline-block;background:var(--orange);color:var(--white);font-weight:700;font-size:18px;line-height:1;padding:16px 26px;border-radius:8px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--orange-dk)}
+.btn.ghost{background:var(--white);color:var(--ink);border:2px solid var(--ink)}
+.btn.ghost:hover{background:var(--cream)}
+header.top{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+header.top img{height:44px;width:auto}
+header.top .call{font-weight:700;text-decoration:none;color:var(--maroon);white-space:nowrap}
+header.top .call small{display:block;font-weight:400;color:var(--ink2);font-size:.8rem}
+.hero{position:relative;background:var(--ink);color:var(--white);min-height:560px;display:flex;align-items:center;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.35}
+.hero .wrap{position:relative;z-index:1;padding:4rem 0;max-width:800px;text-align:center}
+.hero h1{color:var(--white);margin-bottom:1rem}
+.hero .sub{font-size:1.2rem;margin-bottom:1.5rem;color:#F3F4F6}
+.hero ul{list-style:none;display:flex;flex-direction:column;gap:.5rem;align-items:center;margin-bottom:1.75rem}
+.hero li::before{content:"✓";color:#E0E88F;font-weight:800;margin-right:.5rem}
+.hero .ctas{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.hero .hours{color:#D1D5DB;font-size:.95rem}
+.trust{background:var(--cream);border-bottom:1px solid var(--line)}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 2rem;padding:1rem 0;font-weight:700;color:var(--maroon)}
+section{padding:3.5rem 0}
+section.alt{background:var(--cream)}
+.two{display:grid;gap:2rem;align-items:center}
+.two img{border-radius:12px;width:100%;aspect-ratio:9/8;object-fit:cover}
+.cards{display:grid;gap:1.25rem}
+.card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
+.card h3{color:var(--maroon)}
+.check{list-style:none;display:grid;gap:.75rem}
+.check li{padding-left:1.75rem;position:relative}
+.check li::before{content:"";position:absolute;left:0;top:.45em;width:14px;height:14px;border-radius:50%;background:var(--green)}
+.steps{display:grid;gap:1.25rem;counter-reset:s}
+.step{position:relative;padding:1.5rem 1.5rem 1.5rem 4.5rem;background:var(--white);border:1px solid var(--line);border-radius:12px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:1.25rem;top:1.25rem;width:2.25rem;height:2.25rem;border-radius:50%;background:var(--maroon);color:var(--white);font-weight:800;display:grid;place-items:center}
+.quotes{display:grid;gap:1.25rem}
+.quote{background:var(--white);border-left:4px solid var(--orange);padding:1.25rem 1.5rem;border-radius:0 12px 12px 0}
+.quote p{font-style:italic;margin-bottom:.5rem}
+.quote cite{font-style:normal;font-weight:700;color:var(--maroon);display:block}
+.quote small{color:var(--ink2)}
+details{border-bottom:1px solid var(--line);padding:1rem 0}
+summary{cursor:pointer;font-weight:700;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::after{content:"+";color:var(--orange-dk);font-weight:800}
+details[open] summary::after{content:"–"}
+details p{margin:.75rem 0 0;color:var(--ink2)}
+.final{background:var(--ink);color:var(--white);text-align:center}
+.final h2{color:var(--white)}
+.final p{color:#D1D5DB}
+footer{background:var(--white);border-top:1px solid var(--line);padding:2.5rem 0;font-size:.95rem;color:var(--ink2)}
+footer .wrap{display:grid;gap:1.5rem}
+footer img.logo{height:40px;width:auto;margin-bottom:.75rem}
+footer img.eho{height:48px;width:auto}
+footer a{color:var(--maroon);font-weight:700;text-decoration:none}
+footer .legal{font-size:.85rem;border-top:1px solid var(--line);padding-top:1rem}
+.center{text-align:center}
+.lead{font-size:1.15rem;color:var(--ink2);max-width:720px;margin-inline:auto}
+/* lightbox form */
+.lb{position:fixed;inset:0;background:rgba(17,30,29,.75);display:none;align-items:center;justify-content:center;padding:1rem;z-index:50}
+.lb.open{display:flex}
+.lb .box{background:var(--white);border-radius:14px;width:min(460px,100%);padding:1.75rem;position:relative;color:var(--ink)}
+.lb .x{position:absolute;right:.75rem;top:.5rem;background:none;border:0;font-size:1.75rem;cursor:pointer;color:var(--ink2);line-height:1}
+.lb h3{color:var(--maroon);margin-bottom:.25rem;font-size:1.4rem}
+.lb .prog{font-size:.85rem;color:var(--ink2);margin-bottom:1rem}
+.lb label{display:block;font-weight:700;margin:.75rem 0 .3rem;font-size:.95rem}
+.lb input,.lb textarea{width:100%;padding:12px 14px;border:2px solid #9CA3AF;border-radius:8px;font:inherit;color:var(--ink);background:var(--white)}
+.lb input:focus,.lb textarea:focus{outline:3px solid var(--green);outline-offset:1px;border-color:var(--green)}
+.lb .row{display:flex;gap:.75rem;margin-top:1.25rem;justify-content:space-between}
+.lb .fs{display:none}.lb .fs.on{display:block}
+.lb .err{color:#B91C1C;font-size:.9rem;margin-top:.5rem;display:none}
+.lb .hp{position:absolute;left:-9999px}
+.lb .note{font-size:.85rem;color:var(--ink2);margin-top:1rem;margin-bottom:0}
+@media(min-width:760px){h1{font-size:3.25rem}h2{font-size:2.25rem}.two{grid-template-columns:1fr 1fr}.cards{grid-template-columns:repeat(3,1fr)}.cards.two-col{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}.quotes{grid-template-columns:repeat(3,1fr)}footer .wrap{grid-template-columns:2fr 1fr 1fr 1fr}.hero ul{flex-direction:row;gap:1.5rem}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a href="https://www.crpm.net/" aria-label="CRPM home"><img src="images/logo.webp" alt="CRPM - Catalyst Realty Property Management" width="387" height="108"></a>
+  <a class="call" href="tel:+13302309949">(330) 230-9949<small>Monday – Friday: 10am – 3pm EST</small></a>
+</div></header>
+<section style="min-height:60vh;display:flex;align-items:center" class="alt"><div class="wrap center">
+ <h1 style="color:var(--maroon)">Thank you</h1>
+ <p class="lead">We received your message about your property. Our team reviews all inquiries promptly and we'll respond within 1 business day to set up a free 30-minute consultation.</p>
+ <p class="lead">Need us sooner? Call <a href="tel:+13302309949" style="color:var(--maroon);font-weight:700">(330) 230-9949</a>, Monday – Friday: 10am – 3pm EST.</p>
+ <p style="margin-top:1.5rem"><a class="btn ghost" href="property-management.html">Back to the page</a></p>
+</div></section>
+<footer><div class="wrap">
+  <div>
+    <img class="logo" src="images/logo.webp" alt="CRPM - Catalyst Realty Property Management">
+    <p><strong>CRPM (Catalyst Realty Property Management)</strong><br>Property Management Company in Fairlawn, OH</p>
+    <p>We are dedicated to creating safe, well-maintained spaces where residents thrive and property owners see their investments grow. Our team fosters community, growth, and trust in everything we do.</p>
+    <img class="eho" src="images/fair-housing.webp" alt="Equal Housing Opportunity">
+  </div>
+  <div><h3>Phone</h3><p><a href="tel:+13302309949">(330) 230-9949</a></p></div>
+  <div><h3>Address</h3><p>822 Kumho Dr Suite 201<br>Fairlawn, OH 44333</p></div>
+  <div><h3>Hours</h3><p>Monday – Friday: 10am – 3pm EST<br>Saturday &amp; Sunday: Closed</p></div>
+  <div class="legal" style="grid-column:1/-1">
+    <p>At CRPM, we are committed to providing equal housing opportunities for all. We do not discriminate on the basis of race, color, religion, national origin, sex, familial status, disability, or any other protected characteristic.</p>
+    <p>CRPM (Catalyst Realty Property Management) ©2026 | All rights reserved | <a href="https://www.crpm.net/privacy-policy/">Privacy Policy</a> | <a href="https://www.crpm.net/terms-of-service/">Terms of Service</a></p>
+  </div>
+</div></footer>
+<!-- CONVERSION SNIPPET: paste the Google Ads conversion event snippet here once the account is live -->
+</body></html>
